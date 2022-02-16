@@ -10,12 +10,13 @@ for n in input:
     newput.append(cases[n])
 
 total_swaps = 0
-for n in range(len(newput)):
-    smallest_index = n
-    for y in range(n+1, len(newput)):
-        if newput[y] < newput[smallest_index]:
-            smallest_index = y
-            total_swaps += 1
-    newput[smallest_index], newput[n] = newput[n], newput[smallest_index]
+for n in range(1, len(newput)):
+    current = newput[n]
+    x = n-1
+    while x >= 0 and current < newput[x]:
+        newput[x+1] = newput[x]
+        x -= 1
+        total_swaps += 1
+    newput[x] = current
 
 print(total_swaps)
