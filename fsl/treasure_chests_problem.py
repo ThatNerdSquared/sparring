@@ -1,19 +1,8 @@
 # A basic script to compute answers to problems involving n pirates walking down
 # n chests, unlocking every nth
 from math import sqrt
-import argparse
 
-parser = argparse.ArgumentParser(
-    description="Compute chests given number."
-)
-parser.add_argument(
-    "num_of_chests",
-    type=int,
-    help="name of function to run"
-)
-
-args = parser.parse_args()
-num_of_chests = args.num_of_chests
+num_of_chests = int(input('What\'s the number of chests? '))
 
 chests = [True] * num_of_chests
 
