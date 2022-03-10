@@ -1,6 +1,5 @@
 # A basic script to compute answers to problems involving n pirates walking down
 # n chests, unlocking every nth
-from math import sqrt
 
 num_of_chests = int(input('What\'s the number of chests? '))
 
