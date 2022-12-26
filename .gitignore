@@ -1,3 +1,7 @@
 **/a.out
 **/target
 **/.DS_Store
+**/.vscode
+**/.idea
+**/node_modules
+**/.history
